@@ -1,0 +1,49 @@
+import numpy as np
+
+# ===== Problem 1: Replace values conditionally =====
+# Create an array and replace all values > 50 with 0, keep others as is
+arr1 = np.array([10, 25, 60, 45, 75, 30, 90])
+# Use np.where() to solve this
+
+# ===== Problem 2: Create a mask and filter =====
+# Given an array of temperatures, create a mask for all temps >= 20
+temps = np.array([15, 22, 18, 25, 14, 30, 19])
+# Find all temperatures >= 20
+
+# ===== Problem 3: Multiple conditions =====
+# Given scores, replace values that are < 40 with "FAIL" and >= 40 with "PASS"
+scores = np.array([35, 55, 38, 92, 45, 28, 88])
+# Use np.where() with nested conditions
+
+# ===== Problem 4: Mask and count =====
+# Given sales data, count how many sales are above the average
+sales = np.array([100, 250, 150, 300, 200, 120, 280])
+# Create a mask for above-average sales and count them
+
+# ===== Problem 5: 2D Array masking =====
+# Given a 2D array of grades, create a mask for all grades >= 80
+grades = np.array([[75, 85, 92],
+                   [88, 76, 95],
+                   [82, 79, 90]])
+# Find positions where grades >= 80
+
+# ===== Problem 6: Complex filtering =====
+# Given age and salary data, find people who are either:
+# - Over 30 years old AND earning > $50,000, OR
+# - Under 30 but earning > $70,000
+ages = np.array([25, 35, 28, 40, 32, 22])
+salaries = np.array([45000, 75000, 80000, 60000, 55000, 90000])
+# Use masking with logical operators
+
+# ===== Problem 7: Replace with different values =====
+# Given an array, replace:
+# - Values < 0 with -1
+# - Values 0-10 with 0  
+# - Values > 10 with 1
+data = np.array([-5, 3, -2, 8, 15, 0, 12, -8, 7])
+# Use nested np.where()
+
+# ===== Problem 8: Find and modify =====
+# Given student scores, boost all scores < 50 by 10 points
+student_scores = np.array([45, 72, 38, 88, 49, 92, 41])
+# Use np.where() to conditionally add 10
